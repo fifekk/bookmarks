@@ -26,7 +26,7 @@ SECRET_KEY = '8ji$n9vedx-q8xerl*p^s69sd&m8s$j23uw8j6ffg&aoe^*2&9'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
