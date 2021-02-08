@@ -21,6 +21,7 @@ from . import views
 urlpatterns = [
     # post views
     path('', views.dashboard, name='dashboard'),
-    # all commented out code from line 5 to 20 can be replaced by one line
-    path('', include('django.contrib.auth.urls'))
+    # all commented out code from line 5 to 20 can be replaced by one line below
+    path('', include('django.contrib.auth.urls')),
+    path('register/', views.register, name='register')
 ]
