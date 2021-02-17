@@ -23,5 +23,6 @@ urlpatterns = [
     path('', views.dashboard, name='dashboard'),
     # all commented out code from line 5 to 20 can be replaced by one line below
     path('', include('django.contrib.auth.urls')),
-    path('register/', views.register, name='register')
+    path('register/', views.register, name='register'),
+    path('edit/', views.edit, name='edit')
 ]
